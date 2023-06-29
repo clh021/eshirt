@@ -17,14 +17,14 @@ services:
           context: ./client
         environment:
           - REACT_APP_AUTH0_AUDIENCE=eshirts-api
-          - REACT_APP_AUTH0_CLIENT=DIUPLYgXWA1dwcwZ9hP8WY1y8XFdZOVe
-          - REACT_APP_AUTH0_DOMAIN=eshirts-henry.us.auth0.com
+          - REACT_APP_AUTH0_CLIENT=DIUPLYgXWA1dwcwZ9hP8Y1y8XFdZOVe
+          - REACT_APP_AUTH0_DOMAIN=eshirts-henry.auth.cc
         ports:
           - "80:80"
-          - "443:443"
+        #   - "443:443"
         volumes:
-          - /etc/ssl/certs:/etc/ssl/certs
-          - /etc/ssl/certs/private:/etc/ssl/certs/private
+          - ./certs:/etc/ssl/certs
+          - ./certs/private:/etc/ssl/certs/private
         depends_on:
           - backend
 
