@@ -38,17 +38,17 @@ function ShirtSize(props) {
                     <img className={SizeCSS.sizeBoard} src={sizeBoard}></img>
                 </div>
                 <div className={SizeCSS.sizeCardContainer}>
-                    <div className={SizeCSS.sizeCard} style={props.phase.sizeSelected.data === 'S' ? {transform: 'scaleX(1.1) scaleY(1.1)', backgroundColor: '#ffb627'} : {}}onClick={()=>{
+                    <div className={SizeCSS.sizeCard} style={props.phase.sizeSelected.data === 'S' ? {transform: 'scaleX(1.1) scaleY(1.1)', backgroundColor: '#cfeafb'} : {}}onClick={()=>{
                         setData('S')
                     }}>
                         <h2>S</h2>
                     </div>
-                    <div className={SizeCSS.sizeCard} style={props.phase.sizeSelected.data === 'M' ? {transform: 'scaleX(1.1) scaleY(1.1)', backgroundColor: '#ffb627'} : {}} onClick={()=>{
+                    <div className={SizeCSS.sizeCard} style={props.phase.sizeSelected.data === 'M' ? {transform: 'scaleX(1.1) scaleY(1.1)', backgroundColor: '#cfeafb'} : {}} onClick={()=>{
                         return setData('M')
                     }}>
                         <h2>M</h2>
                     </div>
-                    <div className={SizeCSS.sizeCard} style={props.phase.sizeSelected.data === 'L' ? {transform: 'scaleX(1.1) scaleY(1.1)', backgroundColor: '#ffb627'} : {}} onClick={()=>{
+                    <div className={SizeCSS.sizeCard} style={props.phase.sizeSelected.data === 'L' ? {transform: 'scaleX(1.1) scaleY(1.1)', backgroundColor: '#cfeafb'} : {}} onClick={()=>{
                         return setData('L')
                     }}>
                         <h2>L</h2>

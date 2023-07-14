@@ -16,7 +16,7 @@
     justify-content: center;
     height: 125px;
     width: 40%;
-    border: 2px solid #ffb627;
+    border: 2px solid #cfeafb;
     border-radius: 10px;
     backdrop-filter: blur(5px)
 }
@@ -28,7 +28,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     background-color: black;
     color:white ;
-    border: 2px solid #ffb627;
+    border: 2px solid #cfeafb;
     border-radius: 10px;
 }
 
@@ -80,7 +80,7 @@
 
 .sizeCard:hover {
     transform: scaleX(1.2) scaleY(1.2);
-    background-color: #ffb627;
+    background-color: #cfeafb;
     box-shadow: 1px 1px 15px 8px black;
 }
 
@@ -145,7 +145,7 @@
         justify-content: center;
         height: 50px;
         width: 340px;
-        border: 2px solid #ffb627;
+        border: 2px solid #cfeafb;
         border-radius: 10px;
         backdrop-filter: blur(5px)
     }
@@ -157,7 +157,7 @@
         font-family: 'Roboto Condensed', sans-serif;
         background-color: black;
         color:white ;
-        border: 2px solid #ffb627;
+        border: 2px solid #cfeafb;
         border-radius: 10px;
         font-size: 20px;
     }

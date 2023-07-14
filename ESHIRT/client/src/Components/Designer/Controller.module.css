@@ -31,13 +31,13 @@
 .buttons {
     height: min-content;
     margin: 0 auto;
-    color: #ffb627;
+    color: #cfeafb;
     padding-left: 10px;
     padding-right: 10px;
     background-color: black;
     font-size: 16px;
     font-weight: 900;
-    border: 2px solid #ffb627;
+    border: 2px solid #cfeafb;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -52,7 +52,7 @@
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #ffb627;
+    background-color: #cfeafb;
     font-size: 16px;
     font-weight: 900;
     border-radius: 5px;
@@ -63,7 +63,7 @@
 
 
 .btnDescription > h4 {
-    color: #ffb627;
+    /* color: #cfeafb; */
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -114,13 +114,13 @@
         
     height: min-content;
     margin: 0 auto;
-    color: #ffb627;
+    color: #cfeafb;
     padding-left: 10px;
     padding-right: 10px;
     background-color: black;
     font-size: 16px;
     font-weight: 900;
-    border: 2px solid #ffb627;
+    border: 2px solid #cfeafb;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;

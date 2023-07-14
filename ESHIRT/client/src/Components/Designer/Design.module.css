@@ -23,14 +23,14 @@
     /* background-color: black; */
     font-size: 28px;
     border-radius: 5px;
-    padding-left: 5%; /*#ffb627*/
+    padding-left: 5%; /*#cfeafb*/
 }
 
 
 .shadowsFamily {
     font-family: 'Shadows Into Light', cursive;
     color: black;
-    text-shadow:3px 3px 3px #ffb627;
+    text-shadow:3px 3px 3px #cfeafb;
 	margin: 0%;
 	font-size: 60px;
     text-align: center;
@@ -61,7 +61,7 @@
     .shadowsFamily {
         font-family: 'Shadows Into Light', cursive;
         color: black;
-        text-shadow:3px 3px 3px #ffb627;
+        text-shadow:3px 3px 3px #cfeafb;
         margin: 0%;
         font-size: 60px;
         text-align: center;

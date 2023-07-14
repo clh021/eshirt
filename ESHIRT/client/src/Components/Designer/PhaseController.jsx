@@ -9,10 +9,10 @@ function PhaseController(props) {
 
 
     const phases = [
-                    {index: 1, name: 'Model', phase: 'modelSelected'}, 
-                    {index: 2, name: 'Size', phase: 'sizeSelected'},
-                    {index: 3, name: 'Color', phase: 'colorSelected'},
-                    {index: 4, name: 'Design', phase: 'designSelected'}
+                    {index: 1, name: '款式', phase: 'modelSelected'},
+                    {index: 2, name: '尺码', phase: 'sizeSelected'},
+                    {index: 3, name: '颜色', phase: 'colorSelected'},
+                    {index: 4, name: '设计', phase: 'designSelected'}
                     ]
 
 
