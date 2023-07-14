@@ -49,7 +49,6 @@ function Design(props) {
 
     return (
         <div className={DesignCSS.parentContainer}>
-            <h1 className={DesignCSS.shadowsFamily}>Design your own shirt!</h1>
             <div className={DesignCSS.mainContainer}>
                 <PhaseController phase={phase} setPhase={phaseSetter} />
                 {!phase.modelSelected.status && <ShirtModel phase={phase} setPhase={phaseSetter}/>}

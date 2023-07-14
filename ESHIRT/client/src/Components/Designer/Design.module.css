@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap%27');
 
-.parentContainer {
+/* .parentContainer {
     background-image: url("../../Images/bg_img5.jpeg");
     background-repeat: no-repeat;
     background-size: 20%;
     background-position-x: center;
-
-}
+} */
 
 .mainContainer{
 
@@ -53,13 +52,12 @@
     justify-content: space-around;
     margin: 0 auto;
     }
-    .parentContainer {
+    /* .parentContainer {
         background-image: url("../../Images/bg_img5.jpeg");
         background-repeat: no-repeat;
         background-size: 50%;
         background-position-x: center;
-    
-    }
+    } */
     .shadowsFamily {
         font-family: 'Shadows Into Light', cursive;
         color: black;

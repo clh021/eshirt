@@ -17,8 +17,8 @@ function ShirtModel(props) {
                     swal({
                         title: data,
                         icon: 'success',
-                        text: 'The model '+ data + ' has been selected. You can now choose your preferred size.',
-                        buttons: ['Choose another model', 'CHOOSE SIZE']
+                        text: '您选择了'+ data + '下一步选择尺码',
+                        buttons: ['换个款式', '选择尺码']
                     }).then((allow)=> {
                         if(data!== null && allow) {
                             return props.setPhase({
@@ -32,7 +32,7 @@ function ShirtModel(props) {
     return (
         <div className={ModelCSS.containerOfDesign}>
             <div className={ModelCSS.title}>
-                <h2>{!data && !props.phase.modelSelected.data ? 'Choose the model of your shirt' : !data ? props.phase.modelSelected.data : data}</h2>
+                <h2>{!data && !props.phase.modelSelected.data ? '选择款式' : !data ? props.phase.modelSelected.data : data}</h2>
                 {/* <span>{data && <button className={ModelCSS.GoAhead}onClick={()=>{
                     if(data!== null) {
                         return props.setPhase({
@@ -43,9 +43,9 @@ function ShirtModel(props) {
                 </div>
             <div className={ModelCSS.AvailableShirts} >
 
-                <div className={ModelCSS.ShirtAvatar} style={props.phase.modelSelected.data === 'Long sleeve' ? {backgroundColor: 'gray'} : {backgroundColor: 'none'}} onClick={()=> {
+                <div className={ModelCSS.ShirtAvatar} style={props.phase.modelSelected.data === '长袖' ? {backgroundColor: 'gray'} : {backgroundColor: 'none'}} onClick={()=> {
                     
-                    return setData(prevState => prevState = 'Long sleeve');
+                    return setData(prevState => prevState = '长袖');
                     
                     }}>
                     <img src={img}></img>
