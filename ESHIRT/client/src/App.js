@@ -145,13 +145,13 @@ function App({location}) {
           <meta property="og:site_name" content="E-shirts"/>
           <meta property="og:locale" content="en_US" />
           <meta property="og:type" content="website" />
-          <meta property="og:image" content="https://res.cloudinary.com/dqeao9uzt/image/upload/v1625256392/WhatsApp_Image_2021-07-02_at_17.06.20_axdxa2.jpg" />
+          <meta property="og:image" content="/WhatsApp_Image_2021-07-02_at_17.06.20_axdxa2.jpg" />
         </Helmet>
       <Switch >
       
       
       
-      <Route exact path= '/' component={Landing}/>
+      <Route exact path= '/' component={Design}/>
       
       <div className= 'App' >
       
