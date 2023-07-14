@@ -15,8 +15,8 @@ function ShirtSize(props) {
                         swal({
                             title: data,
                             icon: 'success',
-                            text: 'The size '+data+' has been selected. Choose your colour.',
-                            buttons: ['Choose another model', 'CHOOSE COLOUR']
+                            text: '您选择了'+data+'，下一步选择颜色',
+                            buttons: ['换个尺码', '选择颜色']
                         }).then((allow)=> {
                             if(data!==null && allow) {
                                 props.setPhase({
@@ -31,7 +31,7 @@ function ShirtSize(props) {
     return (<div className={SizeCSS.containerOfSize}>
                 <div className={SizeCSS.title}>
                     <h2>
-                        Choose the size of your custom shirt
+                        选择尺码
                     </h2>
                 </div>
                 <div>

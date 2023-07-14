@@ -80,7 +80,7 @@ function ShirtModel(props) {
                 onClick={handleInput}
                 type="submit" 
                 disabled={data===null}
-                value="Choose color"
+                value="确认此颜色"
                 style={{
                     borderRadius: '5px', 
                     padding: '10px 40px 10px 40px', 

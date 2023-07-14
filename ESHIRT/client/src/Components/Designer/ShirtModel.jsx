@@ -17,7 +17,7 @@ function ShirtModel(props) {
                     swal({
                         title: data,
                         icon: 'success',
-                        text: '您选择了'+ data + '下一步选择尺码',
+                        text: '您选择了'+ data + '，下一步选择尺码',
                         buttons: ['换个款式', '选择尺码']
                     }).then((allow)=> {
                         if(data!== null && allow) {

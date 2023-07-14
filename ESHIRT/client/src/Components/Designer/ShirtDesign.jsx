@@ -123,10 +123,14 @@ function ShirtDesign(props) {
                         svg: '',
                 }
 
-                if(!validExtensions.hasOwnProperty(e.target.value.split('.')[1])) {
+                const fileExt= e.target.value.split('.').pop()
+                console.log("value:", e.target.value.split('.'));
+                console.log("if:", validExtensions.hasOwnProperty(fileExt));
+
+                if(!validExtensions.hasOwnProperty(fileExt)) {
                         return swal({
-                                title: 'Invalid file',
-                                text: 'Your file has an invalid extension. We only accept images as avatars.',
+                                title: '无效的文件',
+                                text: '只能选择常规图片文件来进行设计。',
                                 icon: 'error',
                         })
                 }
@@ -181,15 +185,14 @@ function ShirtDesign(props) {
                                                                 borderColor: 'salmon',
                                                                 margin: '20px 0px 0px 0px'
                                                         }}>
-                                                                Upload Image
-                                                        
+                                                                上传图片
                                                                 <input type="file" accept="image/*" style={{display: 'none'}} onChange={setPhotoHandler}/>
                                                         </label>
 
                                                         <input 
                                                                 type="submit" 
                                                                 disabled={data === null} 
-                                                                value={"Create Shirt"}
+                                                                value={"设计完工"}
                                                                 style={{
                                                                         borderRadius: '5px', 
                                                                         padding: '10px 40px 10px 40px', 
