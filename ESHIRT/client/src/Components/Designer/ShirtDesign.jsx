@@ -157,19 +157,36 @@ function ShirtDesign(props) {
                 <div className={PrintCSS.container}>
                         <canvas id="canvas" ref={finalCanvas}/>
                                         <form className={PrintCSS.columnAux} onSubmit={(e)=> {
+                                                function download(url, filename) {
+                                                  fetch(url)
+                                                    .then(response => response.blob())
+                                                    .then(blob => {
+                                                      const link = document.createElement("a");
+                                                      link.href = URL.createObjectURL(blob);
+                                                      link.download = filename;
+                                                      link.click();
+                                                  })
+                                                  .catch(console.error);
+                                                }
+                                                function fileTime(now) {
+                                                  if ( typeof now !== "string" || now.length<1) {
+                                                    now = (new Date()).toLocaleString('en-US', { timeZone: "Asia/Shanghai" });
+                                                  }
+                                                  let nowDate = (new Date(now));
+                                                  nowDate.setHours(nowDate.getHours() + 8);
+                                                  return nowDate.toISOString().replace("T","_").replace("Z","").replace("-","").replace("-","").replace(":","").replace(":","").substring(0, 15);
+                                                };
                                                 e.preventDefault();
-                                                
-                                                
                                                 const finalImage = finalCanvas.current.toDataURL();
-
-                                                props.setPhase({
-                                                        ...props.phase, 
-                                                        designSelected: {
-                                                                status: true, 
-                                                                data: finalImage
-                                                        }, 
-                                                        allGoodForSubmit: true,
-                                                })
+                                                download(finalImage, `我的设计.${fileTime()}.png`);
+                                                // props.setPhase({
+                                                //         ...props.phase,
+                                                //         designSelected: {
+                                                //                 status: true,
+                                                //                 data: finalImage
+                                                //         },
+                                                //         allGoodForSubmit: true,
+                                                // })
                                         }}>
 
                                                 
